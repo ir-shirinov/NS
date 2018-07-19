@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Каталог товаров</title>
+  </head>
+
+  <body>
+
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html"><img src="nerds-logo.svg" alt="Наш логотип"></a>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a class="cart">Корзина</a>
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <h1>Магазин готовых шаблонов</h1>
+
+      <section class="filter">
+        <h2 class='visually-hidden'>Фильтр шаблонов</h2>
+        <form action="#" method="get">
+          <fieldset class="filter-cost">
+            <legend>Стоимость:</legend>
+            <input type="range" min="0" max="20000" name="filter-cost-range">
+            <p>ОТ<input type="text" name="filter-cost-min" value="0"></p>
+            <p>ДО<input type="text" name="filter-cost-max" value="15000"></p>
+          </fieldset>
+          <fieldset class="filter-grid">
+            <legend>Сетка:</legend>
+            <p><input type="radio" name="grid" value="adaptive">Адаптивная</p>
+            <p><input type="radio" name="grid" value="fix" checked>Фиксированная</p>
+            <p><input type="radio" name="grid" value="rubber">Резиновая</p>
+          </fieldset>
+          <fieldset class="filter-option">
+            <legend>ОСОБОЕННОСТИ:</legend>
+            <p><input type="checkbox" name="option" value="slider" checked>Слайдер</p>
+            <p><input type="checkbox" name="option" value="blok-benefit">Блок преимуществ</p>
+            <p><input type="checkbox" name="option" value="news" checked>Новости</p>
+            <p><input type="checkbox" name="option" value="gallery">Галерея</p>
+            <p><input type="checkbox" name="option" value="cart">Корзина</p>
+          </fieldset>
+          <button type="submit">ПОКАЗАТЬ</button>
+
+        </form>
+      </section>
+
+      <section class="product">
+        <h2 class="visually-hidden">Готовые шаблоны сайтов</h2>
+        <section class="product-sort">
+          <h3 class="visually-hidden">Сортировка шаблонов</h3>
+          <b>сортировать:</b>
+          <ul class="product-sort-list">
+            <li>по цене</li>
+            <li>по типу</li>
+            <li>по названию</li>
+            <li>b</li>
+            <li>u</li>
+          </ul>
+        </section>
+
+        <ol class="product-item">
+          <li>
+            <h3 class="product-item-title"><a href="#">sedona</a></h3>
+            <p>Информационный сайт для туристов</p>
+            <b class="product-item-cost">9900 руб.</b>
+            <img alt="Изображение сайта седона" src="#">
+          </li>
+          <li>
+            <h3 class="product-item-title"><a href="#">pink app</a></h3>
+            <p>Продуктовый лендингд приложения для iOS и Андроид</p>
+            <b class="product-item-cost">9900 руб.</b>
+            <img alt="Изображение сайта pink app" src="#">
+          </li>
+          <li>
+            <h3 class="product-item-title"><a href="#">barbershop</a></h3>
+            <p>Сайт салоны красоты. Для мужчин, да</p>
+            <b class="product-item-cost">9900 руб.</b>
+            <img alt="Изображение сайта barbershop" src="#">
+          </li>
+          <li>
+            <h3 class="product-item-title"><a href="#">mishka</a></h3>
+            <p>Интернет-магазин вязанных игрушек</p>
+            <b class="product-item-cost">9900 руб.</b>
+            <img alt="Изображение сайта mishka" src="#">
+          </li>
+          <li>
+            <h3 class="product-item-title"><a href="#">A Plus</a></h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <b class="product-item-cost">9900 руб.</b>
+            <img alt="Изображение сайта седона A Plus" src="#">
+          </li>
+          <li>
+            <h3 class="product-item-title"><a href="#">КВАСТ</a></h3>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <b class="product-item-cost">9900 руб.</b>
+            <img alt="Изображение сайта КВАСТ" src="#">
+          </li>
+        </ol>
+
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-curren"><a href="#">1</a></li>
+          <li class="pagination-item"><a>2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <section class="footer-our-work">
+        <h2 class="visually-hidden">Наши работы</h2>
+        <ul>
+          <li><a href="#"><img src="#" alt="Сайт Html academy"></a></li>
+          <li><a href="#"><img src="#" alt="Сайт Барбершоп"></a></li>
+          <li><a href="#"><img src="#" alt="Сайт Pink"></a></li>
+          <li><a href="#"><img src="#" alt="Сайт Mishka"></a></li>
+        </ul>
+      </section>
+
+      <section class="footer-contats">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <img src="#" alt ="Как к нам проехать">
+        <p>
+          <b>Nerds Design Studio</b><br>
+          191186, Санкт-Петербург,<br>
+          ул.Б.Конюшенная, д.19/8<br>
+          тел. +7(812)275-75-75
+          <a href="#" class="button">Напишите нам</a>
+        </p>
+      </section>
+
+      <section class="footer-social">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul>
+          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+        <p>
+          <b>Давайте дружить, это выгодно!</b><br>Скидка 10% для друзей из социальных сетей
+        </p>
+      </section>
+    </footer>
+      
+    <section class="letter">
+        <h2>Напишите нам</h2>
+        <form action="#" method="post">
+          <p>
+            Ваше имя:
+            <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p>
+            Ваше e-mail:
+            <input type="email" name="email" placeholder="Для отправки ответа">
+          </p>
+          <p>
+            Текст письма:
+            <textarea name="letter" rows="15" cols="100">В свободной форме</textarea>
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+        <span>x</span>
+    </section>
+
+  </body>
+
+</html>
