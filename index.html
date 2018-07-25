@@ -46,6 +46,12 @@
           </li>
         </ul>
 
+        <div>
+          <button type="button" class="promo-slider-button">1 слайдер</button>
+          <button type="button" class="promo-slider-button">2 слайдер</button>
+          <button type="button" class="promo-slider-button">3 слайдер</button>
+        </div>
+
       </section>
 
       <section class="product">
@@ -73,7 +79,7 @@
         <h2 class="visually-hidden">О нас</h2>
         <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
         <p>Используем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покдадая рук, как роботы.</p>
-        <strong>Выполняем заказы на разработку</strong>
+        <strong>Выполняем заказы на разработку:</strong>
           <ul>
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильный приложений для iOS и Android</li>
@@ -85,8 +91,8 @@
       <aside>
         <h2 class="visually-hidden">Наша статистика</h2>
         <img src="#" alt="Наш логотип">
-        <b>С 2004 года любим точность во всем:</b>
         <table class="features">
+          <caption>С 2004 года любим точность во всем:</caption>
           <tr>
             <th>Уровень самоотдачи</th>
             <th>Соблюдение сроков</th>
@@ -117,7 +123,7 @@
 
       <section class="footer-contats">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <img src="img/map_maker.png" alt ="Как к нам проехать">
+        <img src="img/map_maker.png" alt="Наш адрес:191186, Санкт-Петербург">
         <p>
           <b>Nerds Design Studio</b><br>
           191186, Санкт-Петербург,<br>
@@ -145,20 +151,20 @@
         <h2>Напишите нам</h2>
         <form action="#" method="post">
           <p>
-            Ваше имя:
-            <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            <label for="letter-name">Ваше имя:</label>
+            <input id="letter-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
           </p>
           <p>
-            Ваше e-mail:
-            <input type="email" name="email" placeholder="Для отправки ответа">
+            <label for="letter-email">Ваше e-mail:</label>
+            <input id="letter-email" type="email" name="email" placeholder="Для отправки ответа">
           </p>
           <p>
-            Текст письма:
-            <textarea name="letter" rows="15" cols="100">В свободной форме</textarea>
+            <label for="letter-text">Текст письма:</label>
+            <textarea id="letter-text" name="letter" rows="15" cols="100">В свободной форме</textarea>
           </p>
           <button type="submit">Отправить</button>
         </form>
-        <span>x</span>
+        <button type="button">Закрыть</button>
       </section>
   </body>
 </html>
