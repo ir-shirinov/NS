@@ -4,6 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог товаров</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -37,19 +39,23 @@
           </fieldset>
           <fieldset class="filter-grid">
             <legend>Сетка:</legend>
-            <label><input type="radio" name="grid" value="adaptive">Адаптивная</label>
-            <label><input type="radio" name="grid" value="fix" checked>Фиксированная</label>
-            <label><input type="radio" name="grid" value="rubber">Резиновая</label>
+            <ul>
+              <li><label><input type="radio" name="grid" value="adaptive">Адаптивная</label></li>
+              <li><label><input type="radio" name="grid" value="fix" checked>Фиксированная</label></li>
+              <li><label><input type="radio" name="grid" value="rubber">Резиновая</label></li>
+            </ul>
           </fieldset>
           <fieldset class="filter-option">
             <legend>ОСОБОЕННОСТИ:</legend>
-            <label><input type="checkbox" name="option" value="slider" checked>Слайдер</label>
-            <label><input type="checkbox" name="option" value="blok-benefit">Блок преимуществ</label>
-            <label><input type="checkbox" name="option" value="news" checked>Новости</label>
-            <label><input type="checkbox" name="option" value="gallery">Галерея</label>
-            <label><input type="checkbox" name="option" value="cart">Корзина</label>
+            <ul>
+              <li><label><input type="checkbox" name="option" value="slider" checked>Слайдер</label></li>
+              <li><label><input type="checkbox" name="option" value="blok-benefit">Блок преимуществ</label></li>
+              <li><label><input type="checkbox" name="option" value="news" checked>Новости</label></li>
+              <li><label><input type="checkbox" name="option" value="gallery">Галерея</label></li>
+              <li><label><input type="checkbox" name="option" value="cart">Корзина</label></li>
+            </ul>
           </fieldset>
-          <button type="submit">ПОКАЗАТЬ</button>
+          <button class="btn-submit" type="submit">ПОКАЗАТЬ</button>
 
         </form>
       </section>
@@ -60,11 +66,11 @@
           <h3 class="visually-hidden">Сортировка шаблонов</h3>
           <b>сортировать:</b>
           <ul class="product-sort-list">
-            <li><button type="button">по цене</button></li>
-            <li><button type="button">по типу</button></li>
-            <li><button type="button">по названию</button></li>
-            <li><button type="button">от большего к наименьшему</button></li>
-            <li><button type="button">от наименьшего к большему</button></li>
+            <li><button class="sort-btn" type="button">по цене</button></li>
+            <li><button class="sort-btn" type="button">по типу</button></li>
+            <li><button class="sort-btn" type="button">по названию</button></li>
+            <li><button class="sort-btn" type="button">от большего к наименьшему</button></li>
+            <li><button class="sort-btn" type="button">от наименьшего к большему</button></li>
           </ul>
         </section>
 
@@ -142,7 +148,7 @@
         </p>
       </section>
     </footer>
-      
+
     <section class="letter">
       <h2>Напишите нам</h2>
       <form action="#" method="post">
