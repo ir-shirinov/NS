@@ -9,24 +9,28 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
+  <body class="inner-page">
 
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html"><img src="img/nerds_logo.svg" alt="Наш логотип"></a>
-        <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <a class="cart">Корзина</a>
-      </nav>
-    </header>
+    <div class="color">
+      <header class="main-header container">
+        <nav class="main-navigation">
+          <a class="main-header-logo"><img src="img/nerds_logo.svg" alt="Наш логотип"></a>
+          <ul class="site-navigation visually-hidden">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <a class="cart" href="#">Корзина</a>
+        </nav>
+        <h1>Магазин готовых шаблонов</h1>
+      </header>
+    </div>
+
 
     <main class="container">
 
-      <h1>Магазин готовых шаблонов</h1>
+
 
       <section class="filter">
         <h2 class='visually-hidden'>Фильтр шаблонов</h2>
@@ -62,6 +66,7 @@
 
       <section class="product">
         <h2 class="visually-hidden">Готовые шаблоны сайтов</h2>
+
         <section class="product-sort">
           <h3 class="visually-hidden">Сортировка шаблонов</h3>
           <b>сортировать:</b>
@@ -122,7 +127,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
 
       <section class="footer-contats">
         <h2 class="visually-hidden">Наши контакты</h2>
@@ -147,7 +152,8 @@
           <b>Давайте дружить, это выгодно!</b><br>Скидка 10% для друзей из социальных сетей
         </p>
       </section>
-    </footer>
+
+      </footer>
 
     <section class="letter">
       <h2>Напишите нам</h2>
