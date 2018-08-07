@@ -14,7 +14,7 @@
         <header class="main-header">
           <nav class="main-navigation">
             <a class="main-header-logo"><img src="img/nerds_logo.svg" alt="Наш логотип"></a>
-            <ul class="site-navigation visually-hidden">
+            <ul class="site-navigation">
               <li><a href="#">Студия</a></li>
               <li><a href="#">Клиенты</a></li>
               <li><a href="#">Магазин</a></li>
@@ -26,34 +26,44 @@
 
         <div class="promo-slider">
           <h2 class="visually-hidden">Наши основновные преимущества</h2>
-          <ul class="promo-slider-list">
-            <li class="main-slider-one">
-                <h3 class="main-slider-title">Долго, дорого, скрупулезно.</h3>
+
+          <input type="radio" name="btns-slider" id="btn-slider-1" checked>
+          <input type="radio" name="btns-slider" id="btn-slider-2">
+          <input type="radio" name="btns-slider" id="btn-slider-3">
+
+          <div class="main-slider-one">
+                <h3 class="main-slider-title">Долго, дорого, скрупулезно</h3>
                 <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения</p>
                 <a class="slider-about" href="#">Узнать больше</a>
-            </li>
+          </div>
 
-            <li class="main-slider-two visually-hidden">
+          <div class="main-slider-two">
                 <h3 class="main-slider-title">Любим математику как никто другой</h3>
-                <p>Никакого креатива, только математические формулы <br>для расчета идеальных пропорций.</p>
+                <p>Никакого креатива, только математические формулы <br>для расчета идеальных пропорций</p>
                 <a class="slider-about" href="#">Узнать больше</a>
-            </li>
+          </div>
 
-            <li class="main-slider-three visually-hidden">
+          <div class="main-slider-three">
                 <h3 class="main-slider-title">Только ночь, только хардкор</h3>
                 <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается</p>
                 <a class="slider-about" href="#">Узнать больше</a>
-            </li>
-          </ul>
+          </div>
+
+
+          <div class="label-slider">
+            <label for="btn-slider-1"></label>
+            <label for="btn-slider-2"></label>
+            <label for="btn-slider-3"></label>
+          </div>
+
+
+
+
         </div>
       </div>
     </div>
 
-      <div>
-        <button type="button" class="promo-slider-button visually-hidden">1 слайдер</button>
-        <button type="button" class="promo-slider-button visually-hidden">2 слайдер</button>
-        <button type="button" class="promo-slider-button visually-hidden">3 слайдер</button>
-      </div>
+
     </div>
 
     <main class="container">
@@ -130,12 +140,12 @@
 
       <section class="footer-contats">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <img src="img/map_maker.png" alt="Наш адрес:191186, Санкт-Петербург">
+        <img src="img/map_maker.png"  height="416" width= "1440" alt="Наш адрес:191186, Санкт-Петербург">
         <p>
-          <b>Nerds Design Studio</b><br>
+          <b>Nerds Design Studio</b>
           191186, Санкт-Петербург,<br>
-          ул.Б.Конюшенная, д.19/8<br>
-          тел. +7(812)275-75-75
+          ул.Б.Конюшенная, д.19/8</span>
+          <span class="tel">тел. +7(812)275-75-75</span>
           <a href="#" class="button">Напишите нам</a>
         </p>
       </section>
@@ -143,9 +153,9 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
+          <li><a class="social-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-in" href="#"><span class="visually-hidden">Instagram</span></a></li>
         </ul>
         <p>
           <b>Давайте дружить, это выгодно!</b><br>Скидка 10% для друзей из социальных сетей

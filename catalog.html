@@ -15,10 +15,10 @@
       <header class="main-header container">
         <nav class="main-navigation">
           <a class="main-header-logo"><img src="img/nerds_logo.svg" alt="Наш логотип"></a>
-          <ul class="site-navigation visually-hidden">
+          <ul class="site-navigation">
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
+            <li><a class="active" href="#">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
           <a class="cart" href="#">Корзина</a>
@@ -37,22 +37,37 @@
         <form action="#" method="get">
           <fieldset class="filter-cost">
             <legend>Стоимость:</legend>
-            <div><!--блок для двойного ползунка--></div>
-            <label>ОТ<input type="text" name="filter-cost-min" value="0"></label>
-            <label>ДО<input type="text" name="filter-cost-max" value="15000"></label>
+            <div class="filter-range">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toogle min-toogle"></div>
+              <div class="toogle max-toogle"></div>
+            </div>
+            <label>ОТ <input class="filter-cost-min" type="text" name="filter-cost-min" value="0"></label>
+            <label>ДО <input class="filter-cost-max" type="text" name="filter-cost-max" value="15000"></label>
           </fieldset>
           <fieldset class="filter-grid">
             <legend>Сетка:</legend>
             <ul>
-              <li><label><input type="radio" name="grid" value="adaptive">Адаптивная</label></li>
-              <li><label><input type="radio" name="grid" value="fix" checked>Фиксированная</label></li>
-              <li><label><input type="radio" name="grid" value="rubber">Резиновая</label></li>
+              <li>
+                <input type="radio" name="grid" value="adaptive" id="adaptive">
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" value="fix" id="fix" checked>
+                <label for="fix">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" value="rubber" id="rubber">
+                <label for="rubber">Резиновая</label>
+              </li>
             </ul>
           </fieldset>
           <fieldset class="filter-option">
             <legend>ОСОБОЕННОСТИ:</legend>
             <ul>
-              <li><label><input type="checkbox" name="option" value="slider" checked>Слайдер</label></li>
+              <li><label>Слайдер</label></li>
               <li><label><input type="checkbox" name="option" value="blok-benefit">Блок преимуществ</label></li>
               <li><label><input type="checkbox" name="option" value="news" checked>Новости</label></li>
               <li><label><input type="checkbox" name="option" value="gallery">Галерея</label></li>
@@ -74,46 +89,64 @@
             <li><button class="sort-btn" type="button">по цене</button></li>
             <li><button class="sort-btn" type="button">по типу</button></li>
             <li><button class="sort-btn" type="button">по названию</button></li>
-            <li><button class="sort-btn" type="button">от большего к наименьшему</button></li>
-            <li><button class="sort-btn" type="button">от наименьшего к большему</button></li>
+            <li><button class="sort-up" type="button"><span class="visually-hidden">от большего к наименьшему</span></button></li>
+            <li><button class="sort-bottom" type="button"><span class="visually-hidden">от наименьшего к большему</span></button></li>
           </ul>
         </section>
 
         <ol class="product-item">
           <li>
-            <h3 class="product-item-title"><a href="#">sedona</a></h3>
-            <p>Информационный сайт для туристов</p>
-            <b class="product-item-cost">9900 руб.</b>
+            <div class="product-item-top"><i class="circle"></i></div>
+            <div class="product-item-container">
+              <h3 class="product-item-title"><a href="#">sedona</a></h3>
+              <p class="product-item-about">Информационный сайт для туристов</p>
+              <b class="product-item-cost">9900 руб.</b>
+            </div>
             <img alt="Изображение сайта седона" src="img/img-sedona.jpg" width="360" height="576">
           </li>
           <li>
-            <h3 class="product-item-title"><a href="#">pink app</a></h3>
-            <p>Продуктовый лендингд приложения для iOS и Андроид</p>
-            <b class="product-item-cost">9900 руб.</b>
+            <div class="product-item-top"><i class="circle"></i></div>
+            <div class="product-item-container">
+              <h3 class="product-item-title"><a href="#">pink app</a></h3>
+              <p class="product-item-about">Продуктовый лендингд приложения для iOS и Андроид</p>
+              <b class="product-item-cost">9900 руб.</b>
+            </div>
             <img alt="Изображение сайта pink app" src="img/img-pink.jpg" width="360" height="576">
           </li>
           <li>
-            <h3 class="product-item-title"><a href="#">barbershop</a></h3>
-            <p>Сайт салоны красоты. Для мужчин, да</p>
-            <b class="product-item-cost">9900 руб.</b>
+            <div class="product-item-top"><i class="circle"></i></div>
+            <div class="product-item-container">
+              <h3 class="product-item-title"><a href="#">barbershop</a></h3>
+              <p class="product-item-about">Сайт салоны красоты. Для мужчин, да</p>
+              <b class="product-item-cost">9900 руб.</b>
+             </div>
             <img alt="Изображение сайта barbershop" src="img/img-barbershop.jpg" width="360" height="576">
           </li>
           <li>
-            <h3 class="product-item-title"><a href="#">mishka</a></h3>
-            <p>Интернет-магазин вязанных игрушек</p>
-            <b class="product-item-cost">9900 руб.</b>
+            <div class="product-item-top"><i class="circle"></i></div>
+            <div class="product-item-container">
+              <h3 class="product-item-title"><a href="#">mishka</a></h3>
+              <p class="product-item-about">Интернет-магазин вязанных игрушек</p>
+              <b class="product-item-cost">9900 руб.</b>
+            </div>
             <img alt="Изображение сайта mishka" src="img/img-mishka.jpg" width="360" height="576">
           </li>
           <li>
-            <h3 class="product-item-title"><a href="#">A Plus</a></h3>
-            <p>Лендинг курсов повышения квалификации</p>
-            <b class="product-item-cost">9900 руб.</b>
+            <div class="product-item-top"><i class="circle"></i></div>
+            <div class="product-item-container">
+              <h3 class="product-item-title"><a href="#">A Plus</a></h3>
+              <p class="product-item-about">Лендинг курсов повышения квалификации</p>
+              <b class="product-item-cost">9900 руб.</b>
+            </div>
             <img alt="Изображение сайта седона A Plus" src="img/img-aplus.jpg" width="360" height="576">
           </li>
           <li>
-            <h3 class="product-item-title"><a href="#">КВАСТ</a></h3>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <b class="product-item-cost">9900 руб.</b>
+            <div class="product-item-top"><i class="circle"></i></div>
+            <div class="product-item-container">
+              <h3 class="product-item-title"><a href="#">КВАСТ</a></h3>
+              <p class="product-item-about">Промо-сайт производителя крафтового кваса</p>
+              <b class="product-item-cost">9900 руб.</b>
+            </div>
             <img alt="Изображение сайта КВАСТ" src="img/img-kvast.jpg" width="360" height="576">
           </li>
         </ol>
@@ -122,7 +155,7 @@
           <li class="pagination-item pagination-item-curren"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
+          <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
         </ul>
       </section>
     </main>
@@ -144,9 +177,9 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
+          <li><a class="social-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-in" href="#"><span class="visually-hidden">Instagram</span></a></li>
         </ul>
         <p>
           <b>Давайте дружить, это выгодно!</b><br>Скидка 10% для друзей из социальных сетей
