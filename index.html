@@ -130,6 +130,7 @@
           <li><a href="#"><img src="img/logo_barbershop.png" alt="Сайт Барбершоп"></a></li>
           <li><a href="#"><img src="img/logo_pink.png" alt="Сайт Pink"></a></li>
           <li><a href="#"><img src="img/logo_mishka.png" alt="Сайт Mishka"></a></li>
+
         </ul>
       </section>
 
@@ -167,21 +168,25 @@
       <section class="letter">
         <h2>Напишите нам</h2>
         <form action="#" method="post">
+          <div class="letter-container">
+            <p>
+              <label for="letter-name">Ваше имя:</label><br>
+              <input id="letter-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            </p>
+            <p>
+              <label for="letter-email">Ваше e-mail:</label><br>
+              <input id="letter-email" type="email" name="email" placeholder="Для отправки ответа">
+            </p>
+          </div>
           <p>
-            <label for="letter-name">Ваше имя:</label>
-            <input id="letter-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            <label for="letter-text">Текст письма:</label><br>
+            <textarea id="letter-text" name="letter" rows="4" placeholder="В свободной форме"></textarea>
           </p>
-          <p>
-            <label for="letter-email">Ваше e-mail:</label>
-            <input id="letter-email" type="email" name="email" placeholder="Для отправки ответа">
-          </p>
-          <p>
-            <label for="letter-text">Текст письма:</label>
-            <textarea id="letter-text" name="letter" rows="15" cols="100">В свободной форме</textarea>
-          </p>
-          <button type="submit">Отправить</button>
+          <button class="letter-submit" type="submit">Отправить</button>
         </form>
-        <button type="button">Закрыть</button>
+        <button class="btn-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
       </section>
   </body>
 </html>

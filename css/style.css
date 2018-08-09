@@ -192,7 +192,7 @@ margin-top: 60px;
   position: absolute;
   bottom:97px;
   left: 50%;
-  z-index: 10;
+
 
   width: 160px;
   height: 20px;
@@ -365,9 +365,10 @@ a.product-presentation-btn:active {
 .product-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-top:80px;
+  margin-top:30px;
   padding-bottom: 80px;
   width: 100%;
   overflow: hidden;
@@ -380,7 +381,7 @@ a.product-presentation-btn:active {
 
 .product-list li {
   width: 300px;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 
 .product-list p {
@@ -390,19 +391,19 @@ a.product-presentation-btn:active {
 .product-site{
   background-image: url("../img/features_1.png");
   background-repeat: no-repeat;
-  background-position: 0 0px;
+  background-position: 0 50px;
 }
 
 .product-app{
   background-image: url("../img/features_2.png");
   background-repeat: no-repeat;
-  background-position: 0 0px;
+  background-position: 0 50px;
 }
 
 .product-presentation{
   background-image: url("../img/features_3.png");
   background-repeat: no-repeat;
-  background-position: 0 0px;
+  background-position: 0 50px;
 }
 
 .about-us b {
@@ -509,6 +510,7 @@ a.product-presentation-btn:active {
 .our-work ul {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 50px 0;
   border-bottom: 2px solid #eee;
   margin-bottom: 85px;
@@ -721,52 +723,6 @@ line-height: 30px;
 
 
 
-.letter label {
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.letter input[type="text"]::-webkit-input-placeholder,
-.letter input[type="email"]::-webkit-input-placeholder,
-.letter textarea {
-  color:#d7dcde;
-}
-
-.letter input[type="text"],
-.letter input[type="email"],
-.letter textarea {
-  border: 2px #d7dcde solid;
-}
-
-.letter input[type="text"]:hover::-webkit-input-placeholder,
-.letter input[type="email"]:hover::-webkit-input-placeholder,
-.letter textarea:hover {
-  color:#b4b9bb;
-}
-
-.letter input[type="text"]:hover,
-.letter input[type="email"]:hover,
-.letter textarea:hover {
-  border-color: #b4b9bb;
-}
-
-.letter input[type="text"]:focus,
-.letter input[type="email"]:focus,
-.letter textarea:focus {
-  border-color: black;
-  outline:none;
-}
-
-.letter input[type="text"]:focus::-webkit-input-placeholder,
-.letter input[type="email"]:focus::-webkit-input-placeholder,
-.letter textarea:focus {
-  color: black;
-}
-
-.letter input[type="email"]:invalid {
-    border-color: #e74246;
-    color: #e74246;
-}
 
 
 /*ВТОРАЯ СТРАНИЦВ*/
@@ -1329,17 +1285,142 @@ fieldset.filter-grid {
   margin: 0;
 }
 
+.letter {
+  position: fixed;
+  bottom: 180px;
+  left: 50%;
+
+  display: none;
+
+  width: 760px;
+  margin-left: -480px;
+  padding: 100px;
+  padding-bottom: 85px;
+  padding-top: 55px;
+
+  background-color: #fff;
+  box-shadow: 0 25px 40px 0 rgba(0,1,1,.75)
+}
+
+.btn-close {
+  position: absolute;
+  top: 80px;
+  right: 90px;
+
+  width: 21px;
+  height: 21px;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.btn-close::before,
+.btn-close::after {
+  content: "";
+
+  position: absolute;
+  top:-4;
+  left:0;
+
+  width: 27px;
+  height: 5px;
+
+  background-color: #fecccd;
+
+  cursor: pointer;
+}
+
+.btn-close::before {
+  transform: rotate(45deg);
+}
+
+.btn-close::after {
+  transform: rotate(-45deg);
+}
+
+.letter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.letter input,
+.letter textarea {
+  width: 330px;
+  padding: 14px;
+  margin-top: 11px;
+}
+
+.letter label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.letter textarea {
+  margin-top: 11px;
+  width: 728px;
+}
+
+.letter input[type="text"]::-webkit-input-placeholder,
+.letter input[type="email"]::-webkit-input-placeholder,
+.letter textarea {
+  color:#d7dcde;
+}
+
+.letter input[type="text"],
+.letter input[type="email"],
+.letter textarea {
+  border: 2px #d7dcde solid;
+  border-radius: 2px;
+}
+
+.letter input[type="text"]:hover::-webkit-input-placeholder,
+.letter input[type="email"]:hover::-webkit-input-placeholder,
+.letter textarea:hover {
+  color:#b4b9bb;
+}
+
+.letter input[type="text"]:hover,
+.letter input[type="email"]:hover,
+.letter textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.letter input[type="text"]:focus,
+.letter input[type="email"]:focus,
+.letter textarea:focus {
+  border-color: black;
+  outline:none;
+}
+
+.letter input[type="text"]:focus::-webkit-input-placeholder,
+.letter input[type="email"]:focus::-webkit-input-placeholder,
+.letter textarea:focus {
+  color: black;
+}
+
+.letter input[type="email"]:invalid {
+    border-color: #e74246;
+    color: #e74246;
+}
 
 
+.letter-submit {
+  margin-top: 47px;
+  padding: 16px 80px;
 
+  font:inherit;
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 
-
-
-
-
-
-
-
+  border: none;
+  border-radius: 2px;
+  background-color: #fb565a;
+]
 
 
 
