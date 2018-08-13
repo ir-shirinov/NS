@@ -16,6 +16,14 @@ a {
   text-decoration: none;
 }
 
+.iframe-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 5;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -516,8 +524,14 @@ a.product-presentation-btn:active {
   margin-bottom: 85px;
 }
 .footer-contats img {
+  position: relative;
+  top:0;
+  left: 0;
+
   height: 416px;
   width: 1440px;
+
+  z-index: 1;
 }
 
 .footer-contats {
@@ -537,6 +551,8 @@ a.product-presentation-btn:active {
   color: #8f8f8f;
 
   background-color: #fff;
+
+  z-index: 10;
 }
 
 .footer-contats p b{
