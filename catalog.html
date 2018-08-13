@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
   </head>
 
   <body class="inner-page">
@@ -189,26 +190,30 @@
 
       </footer>
 
-    <section class="letter">
-      <h2>Напишите нам</h2>
-      <form action="#" method="post">
-        <p>
-          <label for="letter-name">Ваше имя:</label>
-          <input id="letter-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
-        </p>
-        <p>
-          <label for="letter-email">Ваше e-mail:</label>
-          <input id="letter-email" type="email" name="email" placeholder="Для отправки ответа">
-        </p>
-        <p>
-          <label for="letter-text">Текст письма:</label>
-          <textarea id="letter-text" name="letter" rows="15" cols="100">В свободной форме</textarea>
-        </p>
-        <button type="submit">Отправить</button>
-      </form>
-      <button type="button">Закрыть</button>
-    </section>
-
+      <section class="letter">
+        <h2>Напишите нам</h2>
+        <form action="#" method="post">
+          <div class="letter-container">
+            <p>
+              <label for="letter-name">Ваше имя:</label><br>
+              <input id="letter-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            </p>
+            <p>
+              <label for="letter-email">Ваше e-mail:</label><br>
+              <input id="letter-email" type="email" name="email" placeholder="Для отправки ответа">
+            </p>
+          </div>
+          <p>
+            <label for="letter-text">Текст письма:</label><br>
+            <textarea id="letter-text" name="letter" rows="4" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="letter-submit" type="submit">Отправить</button>
+        </form>
+        <button class="btn-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </section>
+    <script src="js/script.js"></script>
   </body>
 
 </html>
